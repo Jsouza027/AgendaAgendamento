@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: salao-backend
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    plan: starter # ou free (nota: persistent disk requer plano pago ou configuração manual)
+    envVars:
+      - key: DB_PATH
+        value: /data/salao.db
+    disk:
+      name: salao-data
+      mountPath: /data
+      sizeGB: 1

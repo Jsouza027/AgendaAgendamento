@@ -1,0 +1,21 @@
+# Logs e temporários
+node_modules/
+dist/
+data/
+*.log
+
+# Variáveis locais
+.env
+.env.local
+
+# Banco local
+*.db
+*.db-wal
+*.db-shm
+
+# Pastas temporárias/testes
+backend-node/
+backend-java-backup/
+.vscode/
+.idea/
+.DS_Store
